@@ -34,7 +34,7 @@ class Discriminator(nn.Module):
 
 
 class Generator(nn.Module):
-    def __init__(self, channels_noise=100, channels_img=3, features_g=64):
+    def __init__(self, channels_noise=128, channels_img=3, features_g=64):
         super(Generator, self).__init__()
         self.latent_dim = channels_noise
         self.net = nn.Sequential(
